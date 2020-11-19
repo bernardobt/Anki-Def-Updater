@@ -5,7 +5,7 @@ You'll need a folder named "Dicitonaries" that contains the unzipped folder "大
 
 Top Button functions:
 
-"Last Note" - Uses AnkiConnect to get the most recent note, get the word in the "focus" field and searches jp definitions in 大辞林 and displays the results.
+"Last Note" - Uses AnkiConnect to get the most recent note, get the word in the "focus" field and searches jp definitions in 大辞林 and displays the results. Need to make it clean the previous results before running again.
 
 "CLipboard" - Copies what's in the clipboard and pastes it in the box.
 
