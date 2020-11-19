@@ -11,7 +11,7 @@ def get_file_list(path):
     arr = os.listdir(path)
     # print(arr)
     arr2 = [None]*len(arr)
-    for i, each in enumerate(arr2):
+    for i in range(len(arr2)):
         arr2[i]=f'term_bank_{i}.json'
     arr2[0] = 'index.json'
     # print(arr2)
@@ -26,8 +26,8 @@ def load_dict(list_of_files):
             data = json.load(file)
             all_jsons.append(data)
     print("-----\nLoaded ",len(all_jsons), 'json files\n-----')
-    for i,list in enumerate(all_jsons):
-        print(list_of_files[i],'. ',len(all_jsons[i]), 'entries.')
+    for i, list_item in enumerate(all_jsons):
+        print(list_of_files[i],'. ',len(list_item), 'entries.')
     # print(all_jsons)
     return all_jsons
 

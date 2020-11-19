@@ -32,7 +32,7 @@ def search():
     result_query = query_dict(loaded_dict, dic_query.rstrip("\n"))
     print(result_query)
     # output.insert(END, result_query)
-    print_results(result_query)
+    updater_print_results(result_query)
 
 
 def dummy():
@@ -40,7 +40,7 @@ def dummy():
     print("Activated dummy funtion!")
 
 
-def print_results(results_list):
+def updater_print_results(results_list):
     step_res = 0
     print(f"Results: {len(results_list)}")
     for c, result in enumerate(results_list):
