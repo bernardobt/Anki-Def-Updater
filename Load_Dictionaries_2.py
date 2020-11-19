@@ -60,16 +60,3 @@ def print_results(results_list):
             print(element)
             new_ele = re.sub('\。\「.*$', "", element)
             print(new_ele)
-
-
-#Read files based on a list with the file names
-
-
-
-
-list_of_term_banks = get_file_list(dict_path)
-loaded_dict = load_dict(list_of_term_banks)
-res = query_dict(loaded_dict,"食べる")
-
-print_results(res)
-
