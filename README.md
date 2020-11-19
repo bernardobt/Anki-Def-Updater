@@ -14,5 +14,5 @@ Top Button functions:
 "Exit" - Closes the program. Why not?
 
 
-It still does not add the selected definitions into anki. But that is the plan.
+It now adds the clicked definition into anki. 
 
