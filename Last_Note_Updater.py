@@ -45,13 +45,13 @@ def plot_results(results_list):
     print(f"Number of Results: {len(results_list)}")
     for c, result in enumerate(results_list):
         print(f"Result {c+1}: ")
-        Label(canvas_frame, text=f"Definition {c+1}: ", bg=bg_color, fg="black", font="none 10 bold").grid(row=c+set_row+step_res, column=0)
+        Label(canvas_frame, text=f"Definition {c+1}: ", bg=bg_color, fg="black", font=f"{font_name} 10 normal").grid(row=c+set_row+step_res, column=0)
         set_def = c+set_row+step_res+1
         for i, element in enumerate(result):
             print(f"\t{element}")
             # new_ele = re.sub('。「.*$', "", element)  # should remove the example sentences
             new_ele = element
-            Button(canvas_frame, text=f"{new_ele}", fg="black", width=42, command=lambda s=new_ele: update_note(s), wraplength=280).grid(row=set_def+i, column=0, columnspan=4, sticky=W)
+            Button(canvas_frame, text=f"{new_ele}", fg="black", font=f"{font_name} 10 normal", width=37, command=lambda s=new_ele: update_note(s), wraplength=280).grid(row=set_def+i, column=0, columnspan=4, sticky=W)
         set_row = (c+set_row+step_res)-c
         step_res = len(result)
     canvas_frame.bind("<Configure>", onFrameConfigure)
@@ -92,6 +92,9 @@ loaded_dict = load_dict(list_of_term_banks)
 field_to_read = "Focus"
 field_to_add = "Def Jp"
 define_query = "added:1"
+
+#Font
+font_name = "Meiryou"
 
 # Color
 bg_color = "#edd1b0"  # Peach
