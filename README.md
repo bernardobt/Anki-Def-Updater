@@ -1,5 +1,6 @@
 # Anki-Def-Updater
-This is my attemp to make my anki cards better, by choosing which definitions from a dictionary, based on the most recent note added.
+This was my attemp to make my anki cards better, by choosing which definitions from a dictionary, based on the most recent note added.
+NOTE: There's a better version of this which is a proper anki addon. So I do not recommend this.
 
 You'll need a folder named "Dicitonaries" that contains the unzipped folder "大辞林"
 
